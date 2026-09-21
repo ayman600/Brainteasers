@@ -21,12 +21,126 @@
                     <img class="front-book-image" src="../assets/first-book-page.png" alt="Front matter" width="300px">
                 </div>
             </div>
-            <div class="example">
-                <p>Exemples are Not available for the moment</p>
+        </div>
+        <hr>
+        <h1 style="text-align: center;font-size:50px;">Try an example yourself</h1>
+        <div class="crosswords">
+            <div class="crossword-1">
+                <div class="keys">
+                    <div class="across">
+                        <ul>
+                            <li><h2 style="text-align: center; margin:0;"><strong>ACROSS</strong></h2></li>
+                            <li>1. Tediousness.</li>
+                            <li>2. Year. A native of New Zealand.</li>
+                            <li>3. Skins.</li>
+                            <li>4. Evening.</li>
+                            <li>5. Lucid. Noun suffix.</li>
+                            <li>6. Not specified. Test measuring inflammation in on's body.</li>
+                            <li>7. Arsenic. Very early.</li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <ul>
+                            <li><h2 style="text-align: center; margin:0;"><strong>DOWN</strong></h2></li>
+                            <li>1. Unveils.</li>
+                            <li>2. in operation. Transports by a van.</li>
+                            <li>3. Shelters for animals.</li>
+                            <li>4. Get with difficulty.</li>
+                            <li>5. Ceases functioning. Noun suffix.</li>
+                            <li>6. Night bird with big eyes. Verb suffix.</li>
+                            <li>7. Spraying mist.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="display:flex; flex-direction: column; justify-content: center; align-items: center; gap:20px;">
+                    <div class="grids">
+                        <div class="grid">
+                            <div class="black-cell"></div>
+                            <div class="readonly">1</div>
+                            <div class="readonly">2</div>
+                            <div class="readonly">3</div>
+                            <div class="readonly">4</div>
+                            <div class="readonly">5</div>
+                            <div class="readonly">6</div>
+                            <div class="readonly">7</div>
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">1</div>
+                            <input type="text" maxlength="1" data-letter="B">
+                            <input type="text" maxlength="1" data-letter="O">
+                            <input type="text" maxlength="1" data-letter="R">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="D">
+                            <input type="text" maxlength="1" data-letter="O">
+                            <input type="text" maxlength="1" data-letter="M">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">2</div>
+                            <input type="text" maxlength="1" data-letter="A">
+                            <input type="text" maxlength="1" data-letter="N">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="K">
+                            <input type="text" maxlength="1" data-letter="I">
+                            <input type="text" maxlength="1" data-letter="W">
+                            <input type="text" maxlength="1" data-letter="I">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">3</div>
+                            <input type="text" maxlength="1" data-letter="R">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="P">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="L">
+                            <input type="text" maxlength="1" data-letter="S">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">4</div>
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="V">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="S">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="T">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">5</div>
+                            <input type="text" maxlength="1" data-letter="S">
+                            <input type="text" maxlength="1" data-letter="A">
+                            <input type="text" maxlength="1" data-letter="N">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="I">
+                            <input type="text" maxlength="1" data-letter="E">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">6</div>
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="N">
+                            <input type="text" maxlength="1" data-letter="S">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="S">
+                            <input type="text" maxlength="1" data-letter="R">
+                        </div>
+                        <div class="grid">
+                            <div class="readonly">7</div>
+                            <input type="text" maxlength="1" data-letter="A">
+                            <input type="text" maxlength="1" data-letter="S">
+                            <div class="black-cell"></div>
+                            <input type="text" maxlength="1" data-letter="W">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <input type="text" maxlength="1" data-letter="E">
+                            <div class="black-cell"></div>
+                        </div>
+                    </div>
+                    <button class="verify-crossword" onclick="checkGrid()"> Verify</button>
+                </div>
             </div>
         </div>
         <hr>
-        <h1 style="text-align: center;font-size:50px;">About the Author</h1>
+        <h1 style="text-align: center;font-size:50px;"><span>About the Author</span><svg style="margin-left:20px;" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></h1>
         <div class="author">
             <div class="author-image">
                 <img src="../assets/test-avatar.webp">
@@ -34,9 +148,9 @@
             </div>
             <div class="author-info">
                 <ul>
-                    <li>He penned Myriads of Articals in Arabic, English and Frensh.</li>
+                    <li>He penned Myriads of Articles in Arabic, English and French.</li>
                     <li>PhD, Sultan Moulay Slimane Beni Mellal.</li>
-                    <li>Master: 2018-2020 Gender Studies Sultane Moulay Slimane Beni Mellal.</li>
+                    <li>Master: 2018-2020 Gender Studies Sultan Moulay Slimane Beni Mellal.</li>
                     <li>Supervising Editor: 2013-2016 at the Moroccan Scientific Community including a group of talents majoring in exact sciences to simplify scientific knowledge for all.</li>
                     <li>Teacher of English (High School) since 1997.</li>
                     <li>Ecole Normale Superieure: 1996, Rabat, English language.</li>
@@ -56,6 +170,17 @@
             </div>
         </div>
     </main>
+<script>
+    function checkGrid() {
+    document.querySelectorAll('.grid input').forEach(input => {
+        if (input.value.toUpperCase() === input.dataset.letter) {
+        input.style.borderColor = '#4caf50';
+        } else {
+        input.style.borderColor = '#f44336';
+        }
+    });
+    }
+</script>
 </body>
 </html>
 
@@ -64,7 +189,7 @@
 ----------------------------------------------
 Nav bar: pricing | author | Features | ...
 ----------------------------------------------
-|introduction of the book 1:  About the author 3:
+|introduction of the book 1 Done:  About the author 3 Done:
 |                         |   |                |
 |                         |   |                |
 |                         |   |                |
