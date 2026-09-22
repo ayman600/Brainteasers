@@ -18,6 +18,33 @@ h1{
     color:#fff8f0;
     margin:0;
 }
+.navigation{
+    position: fixed;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    background: transparent;
+    padding:10px;
+    border-radius:12px;
+}
+.navigation a{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:170px;
+    height:40px;
+    text-decoration: none;
+    color: #1c130d;
+    font-weight:bold;
+    font-size:20px;
+    background-color: #d4c3b3;
+    border-radius:12px;
+}
+.navigation a:hover{
+    background-color: #8f847b;
+}
 .first-section{
     display:flex;
     flex-direction:column;
@@ -148,10 +175,12 @@ h1{
     color:#fff8f0;
     font-weight: bold;
     font-size:20px;
+    gap:20px
 
 }
 .author-image img{
-    margin-bottom:5px;
+    border: 5px solid orange;
+    border-radius:12px;
 }
 .author-info{
     padding:10px;
@@ -167,6 +196,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items:center;
+    margin-bottom:100px;
     gap:35px;
 }
 .pricing{

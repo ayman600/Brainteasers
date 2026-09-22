@@ -10,6 +10,13 @@
 </head>
 <body>
     <main class="main-content">
+        <div class="navigation">
+            <a href="#example">Example</a>
+            <a href="#author">Author</a>
+            <a href="#features">Features</a>
+            <a href="#prices">Buy</a>
+        </div>
+        <div style="margin-bottom: 30px;"></div>
         <div class="first-section">
             <div class="intro">
                 <div class="title-intro">
@@ -23,7 +30,7 @@
             </div>
         </div>
         <hr>
-        <h1 style="text-align: center;font-size:50px;">Try an example yourself</h1>
+        <h1 style="text-align: center;font-size:50px;" id="example">Try an example yourself</h1>
         <div class="crosswords">
             <div class="crossword-1">
                 <div class="keys">
@@ -140,10 +147,10 @@
             </div>
         </div>
         <hr>
-        <h1 style="text-align: center;font-size:50px;"><span>About the Author</span><svg style="margin-left:20px;" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></h1>
+        <h1 style="text-align: center;font-size:50px;" id="author"><span>About the Author</span><svg style="margin-left:20px;" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></h1>
         <div class="author">
             <div class="author-image">
-                <img src="{{ url_for('static', filename='images/test-avatar.webp') }}">
+                <img src="{{ url_for('static', filename='images/author.jpg') }}">
                 <span>RACHID LAANANI</span>
             </div>
             <div class="author-info">
@@ -164,7 +171,7 @@
         <div class="second-section">
             <div>
                 <h1 style="text-align:center; margin-bottom: 5px;">Features</h1>
-                <div class="features">
+                <div class="features" id="features">
                     <ul>
                         <li>Advanced vocabulary level</li>
                         <li>Unique puzzles with zero repeated answers</li>
@@ -174,7 +181,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="pricing">
+            <div class="pricing" id="prices">
                 <a href="#"><button>Get PDF Format</button></a>
                 <a href="#"><button>Get Paper Format</button></a>
                 <h1>Buy now</h1>
@@ -194,43 +201,3 @@
 </script>
 </body>
 </html>
-
--------------------------------------------------------------------------
-
-----------------------------------------------
-Nav bar: pricing | author | Features | ...
-----------------------------------------------
-|introduction of the book 1 Done:  About the author 3 Done:
-|                         |   |                |
-|                         |   |                |
-|                         |   |                |
-|                         |   |                |
-|-------------------------     ----------------
-| Pricing and buy options 4:
-|                         |
-| ----------------------- |
-||                       ||
-| ----------------------- |
-|                         |
-|-------------------------
-| This book adressed to 6:
-|                       |
-|                       |
-|                       |
-|                       |
-|                       |
-| ----------------------
-| Features and Benefits 5:
-|                        |
-|                        |
-|                        |
-|                        |
-|------------------------
-|
-| Try it yourself 2: 
-|                 |
-|                 |
-|                 |
-|                 |
- -----------------
-----------------------------------------------------------------------------
