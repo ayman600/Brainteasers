@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: #1c130d;
     font-family: 'Space Mono', monospace;
@@ -47,6 +50,9 @@ h1{
 }
 .navigation a:hover{
     background-color: #8f847b;
+}
+#example, #author, #features, #prices {
+  scroll-margin-top: 20vh;
 }
 .intro, .author{
     display: flex;
@@ -213,6 +219,9 @@ h1{
     .navigation{
         padding:0;
         width:90%;
+    }
+    #example, #author, #features, #prices {
+        scroll-margin-top: 5vh;
     }
     .intro, .author{
         flex-direction:column;
