@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">    <title>Brainteasers</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </head>
 <body>
     <main class="main-content">
@@ -146,6 +147,21 @@
                 </div>
             </div>
         </div>
+        <div class="email-section">
+            <div class="email-section-header">
+                <h2>Send solution in Email</h2>
+                <button class="toggle" id="email-section"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="orange"><path d="M480-360 280-560h400L480-360Z"/></svg></button>
+            </div>
+            <div class="email-auth" id="email-auth">
+                <form hx-post="/dashboard" hx-target="#email-message" hx-swap="innerHTML">
+                    <input class="email-place" name="email" type="type" autocomplete="email" placeholder="e.g@gmail.com" required>
+                    <input type="submit" value="Send">
+                </form>
+                <div id="email-message">
+
+                </div>
+            </div>
+        </div>
         <hr>
         <h1 style="text-align: center;font-size:50px;" id="author"><span>About the Author</span><svg style="margin-left:20px;" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></h1>
         <div class="author">
@@ -198,6 +214,13 @@
         }
     });
     }
+    document.getElementById('email-section').addEventListener('click', function() {
+    const target = document.getElementById('email-auth');
+    const arrow = document.querySelector('.toggle');
+
+    arrow.classList.toggle('rotate');
+    target.classList.toggle('show');
+});
 </script>
 </body>
 </html>

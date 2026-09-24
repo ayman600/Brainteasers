@@ -46,6 +46,7 @@ h1{
     font-weight:bold;
     font-size:20px;
     background-color: #d4c3b3;
+    border:2px solid #1c130d;
     border-radius:12px;
 }
 .navigation a:hover{
@@ -162,6 +163,57 @@ h1{
 }
 .verify-crossword:hover{
     background-color: rgb(255, 195, 82);
+}
+.email-section, .email-auth{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.email-section-header h2{
+    color:orange;
+}
+.toggle{
+    height:30px;
+    width:30px;
+    padding:0;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.toggle.rotate{
+    transform: rotate(180deg);
+}
+
+.email-auth{
+    opacity:0;
+    visibility: hidden;
+    max-height: 0;
+    transition: opacity 0.1s ease, max-height 0.2s ease, visibility 0.1s;
+}
+.email-auth.show{
+    opacity:1;
+    visibility: visible;
+    max-height: 300px;
+}
+.email-auth input{
+    background: #352318;
+    color:#ffcd9f;
+    border:2px solid orange;
+    border-radius:12px;
+    font-size:20px;
+    padding:5px;
+}
+.email-place{
+    width:250px;
 }
 .author-image{
     display:flex;
