@@ -39,6 +39,7 @@ h1{
     display:flex;
     justify-content: center;
     align-items:center;
+    padding:2px;
     width:170px;
     height:40px;
     text-decoration: none;
@@ -164,11 +165,41 @@ h1{
 .verify-crossword:hover{
     background-color: rgb(255, 195, 82);
 }
+.attemps{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.attemps h3{
+    color: orange;
+    font-size: 20px;
+}
+.attemps-grid{
+    display:flex;
+    gap:10px;
+}
+.attemp{
+    width:36px;
+    height:36px;
+    background-color: #fff8f0;
+    border: 2px solid orange;
+    border-radius:12px;
+}
+.attemp.correct{
+    background-color: #4caf50;
+}
+.attemp.wrong{
+    background-color: #f44336;
+}
 .email-section, .email-auth{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
 }
 .email-section-header{
     display: flex;
@@ -199,22 +230,47 @@ h1{
     max-height: 0;
     transition: opacity 0.1s ease, max-height 0.2s ease, visibility 0.1s;
 }
-.email-auth.show{
+.email-section.show, .email-auth.show{
     opacity:1;
     visibility: visible;
     max-height: 300px;
 }
-.email-auth input{
-    background: #352318;
-    color:#ffcd9f;
+.email-auth input, .email-auth button{
     border:2px solid orange;
     border-radius:12px;
     font-size:20px;
     padding:5px;
 }
 .email-place{
+    background: #352318;
+    color:#ffcd9f;
     width:250px;
 }
+.submit-email{
+    background-color: #ffcd9f;
+    color:#352318;
+    transition: all 250ms ease;
+}
+.email-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.email-form.htmx-request .submit-email{
+    padding:0;
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: orange;
+    background-color: transparent;
+    animation: spin 800ms linear infinite;
+}
+.email-form.htmx-request .submit-email span{
+    display:none
+}
+@keyframes spin {to {transform: rotate(360deg);}}
 .author-image{
     display:flex;
     flex-direction: column;
@@ -305,5 +361,8 @@ h1{
     }
     .second-section{
         flex-direction:column;
+    }
+    .attemps{
+        flex-direction:column
     }
 }
