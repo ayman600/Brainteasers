@@ -25,8 +25,8 @@ def dashboard():
         try:
             email = validate_email(request.form['email'], check_deliverability=False)
             valid_email = email.normalized
-            print(f"-----------{valid_email}")
-            greating_email = ''
+            with open('templates/solution-email.html', 'r') as f:
+                greating_email = f.read()
             message = Message(subject='This is Your Crossword Solution',sender=mail_username ,recipients=[valid_email])
             message.html = greating_email
             mail.send(message)
@@ -34,7 +34,6 @@ def dashboard():
         except (ValueError,EmailNotValidError) as e:
             email_message=str(e)
         return f'''<p style="color:red;">{email_message}</p>'''
-    print(f"================{email_message}")
     return render_template("index.html")
 
 
