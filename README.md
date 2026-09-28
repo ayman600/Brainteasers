@@ -9,5 +9,6 @@ an interactive crossword book landing page designed to show and cell the puzzle 
  Or 
  ```bash 
  1- Clone the repo: git clone https://github.com/ayman600/Brainteasers.git
- 2- download requirement.txt "there is just flask if you have python :)"
+ 2- download requirements: pip install requirements.txt
+ 3- create .env file and set the variables: 'adress_email = ... ' and 'password_email= ... '
  3- run main.py
